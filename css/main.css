@@ -1,0 +1,78 @@
+.container {
+    width: 1200px;
+    height: auto;
+    /* background-color: bisque; */
+    margin: 0 auto;
+}
+
+.text {
+    width: 1000px;
+    height: 70px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text p {
+    font-size: 20px;
+}
+
+.items-content {
+    width: 900px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 280px);
+    grid-template-rows: repeat(2, 280px);
+    margin: 0 auto;
+    column-gap: 30px;
+    row-gap: 15px;
+}
+
+.item {
+    position: relative;
+}
+
+.item p {
+    position: absolute;
+    top: 50%;
+    right: 40%;
+    /* display: none; */
+}
+
+.turkiye  {
+    display: none;
+}
+
+.item-azerbaycan p {
+    display: none;
+}
+
+.item-iran p {
+    display: none;
+}
+
+.item-rusiya p {
+    display: none;
+}
+
+.item-ermenistan p {
+    display: none;
+}
+
+.item-gurcustan p {
+    display: none;
+}
+
+figure {
+    width: 280px;
+    height: 280px;
+}
+
+figure img {
+    width: 100%;
+    height: 100%;
+}
+
+
+

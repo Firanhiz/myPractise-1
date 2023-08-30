@@ -1,0 +1,29 @@
+.figure {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.figure-turkiye {
+    background-image: url(../img/map-2.png);
+}
+
+.figure-azerbaycan {
+    background-image: url(../img/map-1.png);
+}
+
+.figure-iran {
+    background-image: url(../img/map-4.png);
+}
+
+.figure-rusiya {
+    background-image: url(../img/map-5.png);
+}
+
+.figure-ermenistan {
+    background-image: url(../img/map-6.png);
+}
+
+.figure-gurcustan {
+    background-image: url(../img/map-3.png);
+}
