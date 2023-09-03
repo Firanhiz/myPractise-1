@@ -18,7 +18,6 @@ function turkiye() {
     }   
 }
 
-
 function azerbaycan() {
     let xerite = prompt('Bu hansı ölkədir? QEYD: Azərbaycan əlifbasından istifadə edin.', 'Ölkə adı yaz.');
     let azerbaycan = 'Azərbaycan';

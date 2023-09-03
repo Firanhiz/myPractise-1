@@ -5,7 +5,6 @@
 }
 
 .text {
-    width: 1000px;
     height: 70px;
     margin: 0 auto;
     display: flex;
@@ -25,13 +24,37 @@
     font-size: 20px;
 }
 
-.items-content {
-    width: 900px;
+main {
+    display: grid;
+    grid-template-columns: 300px 900px;
+
     height: auto;
+    margin: 0 auto;
+    column-gap: 20px;
+}
+
+.navbar {
+    grid-column: 1;
+    grid-row: 1 / 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(77, 221, 240);
+}
+
+.navbar-item  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    cursor: pointer;
+} 
+
+
+.items-content {
     display: grid;
     grid-template-columns: repeat(3, 280px);
     grid-template-rows: repeat(2, 280px);
-    margin: 0 auto;
     column-gap: 30px;
     row-gap: 15px;
 }
@@ -85,8 +108,8 @@
 }
 
 figure {
-    width: 280px;
-    height: 280px;
+    width: 200px;
+    height: 200px;
 }
 
 figure img {
