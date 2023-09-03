@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -27,118 +28,45 @@
             </nav>
 
             <div class="items-content">
-
-                <div class="item"> 
-                    <figure>
-                        <img class="item-turkiye" src="./img/map-2.png" />
+                <div class="item">
+                    <figure class="figure">
+                        <img class="item-turkiye" src="" />
                     </figure>
                     <p class="turkiye country-name">Türkiyə</p>
                 </div>
-
-                <!-- <div class="item">
-                    
-                    <figure>
-                        <img class="item-azerbaycan" src="./img/map-1.png" />
-                    </figure>
-                    <div>
-                        <button class='btn-block'>IPUCU Goster</button>
-                        <div class='ipucu'>
-                            <div>
-                                <span class='random'></span>
-                                <button class='refresh'>ICON</button>
-                            </div>
-                            <button class='btn-none'>IPUCU Gizlet</button>
-                        </div>
-                    </div>
-                    <p class="azerbaycan country-name">Azərbaycan</p>
-                </div>
-
-                <div class="item">
-                    
-                    <figure>
-                        <img class="item-iran" src="./img/map-4.png" />
-                    </figure>
-                    <div>
-                        <button class='btn-block'>IPUCU Goster</button>
-                        <div class='ipucu'>
-                            <div>
-                                <span class='random'></span>
-                                <button class='refresh'>ICON</button>
-                            </div>
-                            <button class='btn-none'>IPUCU Gizlet</button>
-                        </div>
-                    </div>
-                    <p class="iran country-name">İran</p>
-                </div>
-
-                <div class="item">
-                    
-                    <figure>
-                        <img class="item-rusiya" src="./img/map-5.png" />
-                    </figure>
-                    <div>
-                        <button class='btn-block'>IPUCU Goster</button>
-                        <div class='ipucu'>
-                            <div>
-                                <span class='random'></span>
-                                <button class='refresh'>ICON</button>
-                            </div>
-                            <button class='btn-none'>IPUCU Gizlet</button>
-                        </div>
-                    </div>
-                    <p class="rusiya country-name">Rusiya</p>
-                </div>
-
-                <div class="item">
-                    
-                    <figure>
-                        <img class="item-ermenistan" src="./img/map-6.png" />
-                    </figure>
-                    <div>
-                        <button class='btn-block'>IPUCU Goster</button>
-                        <div class='ipucu'>
-                            <div>
-                                <span class='random'></span>
-                                <button class='refresh'>ICON</button>
-                            </div>
-                            <button class='btn-none'>IPUCU Gizlet</button>
-                        </div>
-                    </div>
-                    <p class="ermenistan country-name">Ermənistan</p>
-                </div>
-
-                <div class="item">
-                    
-                    <figure>
-                        <img class="item-gurcustan" src="./img/map-3.png" />
-                    </figure>
-                    <div>
-                        <button class='btn-block'>IPUCU Goster</button>
-                        <div class='ipucu'>
-                            <div>
-                                <span class='random'></span>
-                                <button class='refresh'>ICON</button>
-                            </div>
-                            <button class='btn-none'>IPUCU Gizlet</button>
-                        </div>
-                    </div>
-                    <p class="gurcustan country-name">Gürcüstan</p>
-                </div> -->
-            
             </div>
 
-            <div class="hint">
-                <button class="hints">İpucu</button>
-                <div>
-                    <button class='btn-block'>Goster</button>
-                    <div class='ipucu'>
-                        <div>
-                            <span class='random'></span>
-                            <button class='refresh'>ICON</button>
-                        </div>
-                        <button class='btn-none'>Gizlət</button>
+            <div class="hints">
+                <button class="appears-hint-button btn-common">
+                    <i class="fa-regular fa-lightbulb"></i>
+                    İpucu
+                </button>
+
+                <div class='hint'>
+                    <!-- <button class='btn-block'>Goster</button> -->
+                    <div>
+                        <span class='random-hints'></span>
+                        <figure>
+                            <img class="random-hints-pic"/>
+                        </figure>
+                        <button class='refresh btn-common'>
+                            <i class="fa-solid fa-arrows-rotate"></i>
+                            İpucunu yenilə
+                        </button>
                     </div>
+
+                    <button class='btn-hidden btn-common'>
+                        <i class="fa-regular fa-eye-slash"></i>
+                        İpucunu gizlət
+                    </button>
                 </div>
+
+                
+
+                <button class="refresh-map btn-common" id="refresh-map">
+                    <i class="fa-solid fa-arrows-rotate"></i>
+                    Xəritəni dəyiş
+                </button>
             </div>
         </main>
     </div>
