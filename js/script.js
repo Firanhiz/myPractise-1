@@ -1,11 +1,35 @@
 'use strict';
 
-document.querySelector('.item-turkiye').addEventListener('click', turkiye);
-// document.querySelector('.item-azerbaycan').addEventListener('click', azerbaycan);
-// document.querySelector('.item-iran').addEventListener('click', iran);
-// document.querySelector('.item-rusiya').addEventListener('click', rusiya);
-// document.querySelector('.item-ermenistan').addEventListener('click', ermenistan);
-// document.querySelector('.item-gurcustan').addEventListener('click', gurcustan);
+document.querySelector('.item-turkiye').addEventListener('click', function() {
+    dialog('Türkiyə', 'turkiye')
+});
+// document.querySelector('.item-azerbaycan').addEventListener('click', function() {
+//     dialog('Azərbaycan', 'azerbaycan')
+// });
+// document.querySelector('.item-iran').addEventListener('click', function() {
+//     dialog('İran', 'iran')
+// });
+// document.querySelector('.item-rusiya').addEventListener('click', function() {
+//     dialog('Rusiya', 'rusiya')
+// });
+// document.querySelector('.item-ermenistan').addEventListener('click', function() {
+//     dialog('Ermənistan', 'ermenistan')
+// });
+// document.querySelector('.item-gurcustan').addEventListener('click', function() {
+//     dialog('Gürcüstan', 'gurcustan')
+// });
+
+
+
+function dialog(answer, element) {
+    let xerite = prompt('Bu hansı ölkədir? QEYD: Azərbaycan əlifbasından istifadə edin.', 'Ölkə adı yaz.');
+
+    if (xerite === answer) {
+        document.querySelector("." + element).style.display = 'block';
+    } else {
+        alert('Cavab səhvdir. Yenidən cəhd edin.');
+    } 
+}
 
 
 document.querySelector('.appears-hint-button').addEventListener('click', showHints);
@@ -37,76 +61,19 @@ document.querySelector('.refresh-map').addEventListener('click', refreshMap);
 //     }
 // }
 
-function turkiye() {
-    let xerite = prompt('Bu hansı ölkədir? QEYD: Azərbaycan əlifbasından istifadə edin.', 'Ölkə adı yaz.');
-    let Turkiye = 'Türkiyə';
+function refreshMap() {
+    let mapOfCountry = [
+        '../img/map-1.png',
+        '../img/map-2.png',
+        '../img/map-3.png',
+        '../img/map-4.png',
+        '../img/map-5.png',
+        '../img/map-6.png'
+    ]
 
-    if (xerite === Turkiye) {
-        document.querySelector(".turkiye").style.display = 'block';
-    } else {
-        alert('Cavab səhvdir. Yenidən cəhd edin.');
-    }   
+    let randomMapOfCountrty = Math.floor(Math.random() * mapOfCountry.length);
+    document.querySelector('.item-turkiye').src = mapOfCountry[randomMapOfCountrty];
 }
-
-// function azerbaycan() {
-//     let xerite = prompt('Bu hansı ölkədir? QEYD: Azərbaycan əlifbasından istifadə edin.', 'Ölkə adı yaz.');
-//     let azerbaycan = 'Azərbaycan';
-
-//     if (xerite === azerbaycan) {
-//         document.querySelector(".azerbaycan").style.display = 'block';
-//     }else {
-//         alert('Cavab səhvdir. Yenidən cəhd edin.');
-//     }   
-// }
-
-// function iran() {
-//     let xerite = prompt('Bu hansı ölkədir? QEYD: Azərbaycan əlifbasından istifadə edin.', 'Ölkə adı yaz.');
-//     let iran = 'İran';
-
-//     if (xerite === iran) {
-//         document.querySelector(".iran").style.display = 'block';
-//     }else {
-//         alert('Cavab səhvdir. Yenidən cəhd edin.');
-//     }   
-// }
-
-// function rusiya() {
-//     let xerite = prompt('Bu hansı ölkədir? QEYD: Azərbaycan əlifbasından istifadə edin.', 'Ölkə adı yaz.');
-//     let rusiya = 'Rusiya';
-
-//     if (xerite === rusiya) {
-//         document.querySelector(".rusiya").style.display = 'block';
-//     }else {
-//         alert('Cavab səhvdir. Yenidən cəhd edin.');
-//     }   
-// }
-
-// function ermenistan() {
-//     let xerite = prompt('Bu hansı ölkədir? QEYD: Azərbaycan əlifbasından istifadə edin.', 'Ölkə adı yaz.');
-//     let ermenistan = 'Ermənistan';
-
-//     if (xerite === ermenistan) {
-//         document.querySelector(".ermenistan").style.display = 'block';
-//     }else {
-//         alert('Cavab səhvdir. Yenidən cəhd edin.');
-//     }   
-// }
-
-// function gurcustan() {
-//     let xerite = prompt('Bu hansı ölkədir? QEYD: Azərbaycan əlifbasından istifadə edin.', 'Ölkə adı yaz.');
-//     let gurcustan = 'Gürcüstan';
-
-//     if (xerite === gurcustan) {
-//         document.querySelector(".gurcustan").style.display = 'block';
-//     }else {
-//         alert('Cavab səhvdir. Yenidən cəhd edin.');
-//     }   
-// }
-
-// ------------------------------------------------------------
-
-
-
 
 function showHints() {
     document.querySelector('.hint').style.display = 'block';
@@ -138,19 +105,6 @@ function randomHints() {
 }
 
 
-function refreshMap() {
-    let mapOfCountry = [
-        '../img/map-1.png',
-        '../img/map-2.png',
-        '../img/map-3.png',
-        '../img/map-4.png',
-        '../img/map-5.png',
-        '../img/map-6.png'
-    ]
-
-    let randomMapOfCountrty = Math.floor(Math.random() * mapOfCountry.length);
-    document.querySelector('.item-turkiye').src = mapOfCountry[randomMapOfCountrty];
-}
 
 
 
