@@ -7,10 +7,35 @@ document.querySelector('.item-turkiye').addEventListener('click', turkiye);
 // document.querySelector('.item-ermenistan').addEventListener('click', ermenistan);
 // document.querySelector('.item-gurcustan').addEventListener('click', gurcustan);
 
+
 document.querySelector('.appears-hint-button').addEventListener('click', showHints);
 document.querySelector('.btn-hidden').addEventListener('click', hideHints)
 document.querySelector('.refresh').addEventListener('click', randomHints);
 document.querySelector('.refresh-map').addEventListener('click', refreshMap);
+
+// let thisItem = document.querySelector('.item');
+
+// let objPic = [
+//     {map: '../img/map-1.png', country: 'Türkiyə'},
+//     {map: '../img/map-2.png', country: 'Azərbaycan'},
+//     {map: '../img/map-3.png', country: 'İran'},
+//     {map: '../img/map-4.png', country: 'Rusiya'},
+//     {map: '../img/map-5.png', country: 'Ermənistan'},
+//     {map: '../img/map-6.png', country: 'Gürcüstan'}
+// ]
+
+// function createItems() {
+//     thisItem.innerHTML = '';
+//     for (let obj of objPic) {
+//         const item = `
+//             <figure>
+//                 <img class="item-turkiye" src='${obj.map}' />
+//             </figure>
+//             <p class="turkiye country-name">${obj.country}</p>
+//         `;
+//     thisItem.insertAdjacentHTML('beforeend', item);
+//     }
+// }
 
 function turkiye() {
     let xerite = prompt('Bu hansı ölkədir? QEYD: Azərbaycan əlifbasından istifadə edin.', 'Ölkə adı yaz.');
@@ -79,6 +104,9 @@ function turkiye() {
 // }
 
 // ------------------------------------------------------------
+
+
+
 
 function showHints() {
     document.querySelector('.hint').style.display = 'block';
